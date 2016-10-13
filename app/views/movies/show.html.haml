@@ -1,4 +1,4 @@
-# in app/views/movies/show.html.haml
+-# in app/views/movies/show.html.haml
 
 %h2 Details about #{@movie.title}
 
@@ -13,5 +13,7 @@
 %h3 Description:
 
 %p#description= @movie.description
+
+= @movie.inspect
 
 = link_to 'Back to movie list', movies_path
